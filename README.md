@@ -100,16 +100,4 @@ EPOCH_DATATHON_5th/
 
 ---
 
-## 제출 CSV 자가 검증
-
-리더보드에 올리기 전에 **로컬에서 먼저 확인**하세요. 제출 횟수를 아끼는 가장 확실한 방법입니다.
-
-```bash
-python tools/validate_submission.py sample_submission.csv 내제출.csv
-```
-
-통과하면 서버에서도 통과합니다.
-
----
-
 *문의: 운영진 **양승빈***
