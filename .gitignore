@@ -1,0 +1,48 @@
+# ── 배포 데이터 ─────────────────────────────────────────
+# 용량이 크고 참가자 모두가 이미 갖고 있다. 저장소에 넣지 않는다.
+data/
+*.parquet
+*.duckdb
+*.db
+*.sqlite3
+
+# CSV 는 기본으로 막고, 제출물만 예외로 연다
+*.csv
+!submissions/**/submission/*.csv
+!tools/*.csv
+
+# ── 파이썬 ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── 모델·중간 산출물 ────────────────────────────────────
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+models/
+checkpoints/
+
+# ── 자격증명 ────────────────────────────────────────────
+# 토큰·API 키가 올라가면 되돌릴 수 없다
+.env
+.env.*
+*.key
+*.pem
+credentials*
+secrets*
+
+# ── OS · 편집기 ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+~$*
