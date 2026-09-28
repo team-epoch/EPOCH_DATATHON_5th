@@ -49,9 +49,6 @@
 - **발표 자료 (PPT)**: `Submission/Final_Round/TeamN/5th_datathon_ppt_팀명.pdf`
   - 주의: 대회 당일과 마찬가지로 **`pdf` 로 변환해서** 제출
 
-> **둘 다 `pdf` 입니다.** 폰트가 깨지거나 표가 밀리는 사고를 막기 위해서입니다.
-> 발표는 제출하신 `pdf` 를 그대로 띄웁니다.
-
 > ⚠️ **폴더 이름의 `Preliminary` · `Final` 은 리더보드의 「연습 / 본선」과 다릅니다.**
 > 폴더는 **제출 시점**을 가리킵니다 — `Preliminary_Round` = 대회 당일, `Final_Round` = 대면 세션.
 > 리더보드의 연습·본선은 **제출 횟수와 정답 구간**을 가르는 별개의 구분입니다.
@@ -108,27 +105,9 @@ EPOCH_DATATHON_5th/
 ## ⚠️ 코드 제출 시 주의
 
 - **운영진이 실행해볼 수 있어야 합니다.** 재현이 안 되면 감점입니다
-- **절대 경로**(`C:\Users\...`)를 상대 경로로 바꿔주세요
 - **랜덤 시드**를 고정해주세요
 - **승인받지 않은 외부 데이터**를 쓴 흔적이 있으면 실격입니다 (YouTube 계열은 승인 대상이 아닙니다)
 - **배포 데이터는 올리지 마세요.** `.gitignore`로 막혀 있습니다
-
-## 📤 올리는 법
-
-```bash
-git clone https://github.com/team-epoch/EPOCH_DATATHON_5th.git
-cd EPOCH_DATATHON_5th
-
-# 자기 팀 폴더에만 파일을 넣습니다
-git add Submission/Preliminary_Round/Team3
-git commit -m "Team3 대회 당일 제출"
-git pull --rebase        # 먼저 받아야 충돌이 안 납니다
-git push
-```
-
-> **`git pull --rebase`를 먼저 하세요.** 여러 팀이 같은 시간에 올리므로 이걸 빼면 `rejected`가 납니다.
-> **깃이 막히면 시간을 쓰지 마세요.** 운영진에게 파일을 직접 주시면 됩니다.
-> **마감 기준은 파일을 준 시각**이지 깃에 올라간 시각이 아닙니다.
 
 ---
 
